@@ -1,0 +1,36 @@
+.frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  aspect-ratio: 3/4;
+  background-color: #534d7e;
+  border-radius: 12px;
+}
+
+.frame svg {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  scale: 0.87;
+  transition: transform 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 1.55, 0.74, 0.55);
+}
+
+.border {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 19px solid #a89bff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 1.55, 0.74, 0.55);
+}
+
+.border:hover {
+  border: 8px solid #a89bff;
+}
